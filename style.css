@@ -1,0 +1,106 @@
+/* || GENERAL CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Plus Jakarta Sans;
+  background-color: rgb(110, 121, 121);
+}
+
+/* ||TYPOGRAPHY */
+
+.dark-blue-font {
+  color: var(--13183-f, #13183f);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.white-font {
+  color: var(--ffffff, #fff);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.grey-font {
+  color: var(--83869-a, #83869a);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* || MAIN CSS */
+
+/* || Navigation */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 37.5rem;
+  margin: 1.6rem auto 0 auto;
+  background: var(--ffffff, #fff);
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.page__nav {
+  display: flex;
+  align-items: center;
+  gap: 11.4rem;
+  margin-bottom: 3.8rem;
+}
+
+.page__nav__logo {
+  font-size: 2.8rem;
+}
+
+.page__nav__btn {
+  border-radius: 2.8rem;
+  background: var(--13183-f, #13183f);
+  line-height: 2.8rem; /* 175% */
+  font-size: 1.6rem;
+  padding: 0.9rem 2.4rem 1.1rem 2.4rem;
+}
+
+/* || Hero section */
+.page__main-content__header {
+  font-size: 4rem;
+  margin-bottom: 2.6rem;
+}
+
+.page__main-content__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.page__main-content__btn {
+  width: 16.7rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem; /* 162.5% */
+  border-radius: 3.15rem;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  padding: 1.5rem 3.7rem 1.5rem 3.8rem;
+  margin-bottom: 4.6rem;
+}
+
+.page__main-content__hero-box {
+  position: relative;
+  display: flex;
+}
+
+.page__main-content__hero-box__img {
+  background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+  /* position: absolute; */
+}

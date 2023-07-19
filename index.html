@@ -11,40 +11,133 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
     <section class="page">
-      <nav class="page__navigation">
-        <p>skilled</p>
-        <button class="page__btn">Get Started</button>
+      <nav class="page__nav">
+        <p class="page__nav__logo dark-blue-font">skilled</p>
+        <div class="page__nav__btn white-font">Get Started</div>
       </nav>
       <main class="page__main-content">
-        <header class="page__main-content__header">
-          <h1>Maximize skill, minimize budget</h1>
-        </header>
-        <p class="page__main-content__text">
+        <h1 class="page__main-content__header dark-blue-font">
+          Maximize skill, minimize budget
+        </h1>
+        <p class="page__main-content__text grey-font">
           Our modern courses across a range of in-demand skills will give you
           the knowledge you need to live the life you want.
         </p>
-        <button class="page__btn">Get Started</button>
-        <div class="page__main-content__hero"></div>
-        <img
-          src="/starter-code/assets/hero-image.png"
-          alt="Girl with cup of tea"
-        />
-        Get Started Check out our most popular courses! Animation Learn the
-        latest animation techniques to create stunning motion design and
-        captivate your audience. Get Started Design Create beautiful, usable
-        interfaces to help shape the future of how the web looks. Get Started
-        Photography Explore critical fundamentals like lighting, composition,
-        and focus to capture exceptional photos. Get Started Crypto All you need
-        to know to get started investing in crypto. Go from beginner to advanced
-        with this 54 hour course. Get Started Business A step-by-step playbook
-        to help you start, scale, and sustain your business without outside
-        investment. Get Started Get Started
+        <div class="page__main-content__btn white-font">Get Started</div>
+        <div class="page__main-content__hero-box">
+          <img
+            class="page__main-content__hero-box__img"
+            src="/starter-code/assets/hero-image.png"
+            alt="Girl with cup of tea"
+          />
+          <div class="page__main-content__hero-box__stat-top">
+            <p>Members</p>
+            <p>29K</p>
+          </div>
+          <div class="page__main-content__hero-box__stat-bottom">
+            <p>Course hours</p>
+            <p>1451</p>
+          </div>
+        </div>
+
+        <!-- Courses Section -->
+        <div class="page__main-content__courses">
+          <div class="page__main-content__courses__box">
+            <h2>Check out our most popular courses!</h2>
+          </div>
+
+          <div class="page__main-content__courses__box">
+            <img
+              src="/starter-code/assets/icon-animation.svg"
+              alt="Animation icon"
+            />
+            <h3>Animation</h3>
+            <p>
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <p>Get Started</p>
+          </div>
+          <div class="page__main-content__courses__box">
+            <img
+              src="/starter-code/assets/icon-design.svg"
+              alt="Animation icon"
+            />
+            <h3>Design</h3>
+            <p>
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <p>Get Started</p>
+          </div>
+          <div class="page__main-content__courses__box">
+            <img
+              src="/starter-code/assets/icon-photography.svg"
+              alt="Animation icon"
+            />
+            <h3>Photography</h3>
+            <p>
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <p>Get Started</p>
+          </div>
+          <div class="page__main-content__courses__box">
+            <img
+              src="/starter-code/assets/icon-crypto.svg"
+              alt="Animation icon"
+            />
+            <h3>Crypto</h3>
+            <p>
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <p>Get Started</p>
+          </div>
+          <div class="page__main-content__courses__box">
+            <img
+              src="/starter-code/assets/icon-business.svg"
+              alt="Animation icon"
+            />
+            <h3>Business</h3>
+            <p>
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <p>Get Started</p>
+          </div>
+        </div>
       </main>
+
+      <footer class="page__footer">
+        <p>skilled</p>
+        <div class="page__btn">Get started</div>
+      </footer>
     </section>
   </body>
 </html>
