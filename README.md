@@ -1,7 +1,7 @@
 # Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/levani-sarishvili/skilled-elearning-landing-page.git)
+- Live Site URL: (https://skilled-elearning-landing-page-levani.netlify.app/)
 
 # Built with
 
