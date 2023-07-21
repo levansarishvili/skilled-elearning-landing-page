@@ -11,8 +11,7 @@ html {
 }
 
 body {
-  font-family: Plus Jakarta Sans;
-  background-color: rgb(110, 121, 121);
+  font-family: Plus Jakarta Sans; 
 }
 
 /* ||TYPOGRAPHY */
@@ -63,6 +62,7 @@ body {
 }
 
 .page__main-content__courses__box__btn {
+  cursor: pointer;
   color: var(--f-74780, #f74780);
   font-size: 1.8rem;
   font-style: normal;
@@ -80,13 +80,13 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  overflow: hidden;
 
   position: relative;
 
   max-width: 37.5rem;
-  margin: 1.6rem auto 0 auto;
+  margin: 0 auto;
   background: var(--ffffff, #fff);
   padding: 1.6rem 1.6rem 0 1.6rem;
 }
@@ -94,7 +94,7 @@ body {
 .page__nav {
   display: flex;
   align-items: center;
-  gap: 11.4rem;
+  justify-content: space-between  ;
   margin-bottom: 3.8rem;
 }
 
@@ -103,6 +103,7 @@ body {
 }
 
 .page__nav__btn {
+  cursor: pointer;
   border-radius: 2.8rem;
   background: var(--13183-f, #13183f);
   line-height: 2.8rem; /* 175% */
@@ -124,6 +125,7 @@ body {
 }
 
 .page__main-content__btn {
+  cursor: pointer;
   font-weight: 700;
   width: 16.7rem;
   font-size: 1.6rem;
@@ -137,8 +139,16 @@ body {
   margin-bottom: 4.6rem;
 }
 
-.page__main-content__img {
+.page__main-content__img-mobile {
   width: 100%;
+}
+
+.page__main-content__img-tablet {
+  display: none;
+}
+
+.page__main-content__img-desktop {
+  display: none;
 }
 
 /* || Courses section */
@@ -158,6 +168,7 @@ body {
 
 .page__footer {
   position: absolute;
+  left: 0;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -175,6 +186,7 @@ body {
 }
 
 .page__footer__btn {
+  cursor: pointer;
   border-radius: 28px;
   background: var(
     --gradient-2,
@@ -188,22 +200,17 @@ body {
 
 /* || MEDIA QUERIES */
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 376px) and (max-width:768px) {
   .page {
     max-width: 76.8rem;
     padding: 2.4rem 4rem 0 4rem;
-    background-image: url(/starter-code/assets/image-hero-tablet.png);
-    background-position: 370px -90px;
-    background-repeat: no-repeat;
   }
 
   .page__nav {
-    gap: 45.9rem;
     margin-bottom: 9.9rem;
   }
+
   .page__main-content__hero {
-    display: flex;
-    flex-direction: column;
     width: 39.8rem;
     margin-bottom: 21rem;
   }
@@ -216,8 +223,14 @@ body {
     margin-bottom: 2.5rem;
   }
 
-  .page__main-content__img {
+  .page__main-content__img-mobile {
     display: none;
+  } 
+
+  .page__main-content__img-tablet {
+    display: block;
+    position: absolute;
+    translate: 47% -105%;
   }
 
   .page__main-content__courses {
@@ -231,9 +244,9 @@ body {
 
   .page__main-content__courses__header {
     padding: 5.6rem 2.1rem 13.9rem 3.2rem;
-    /* margin-bottom: 5.6rem; */
     width: 34rem;
     font-size: 2.4rem;
+    font-weight: 800;
   }
 
   .page__main-content__courses__box {
@@ -250,3 +263,108 @@ body {
     padding: 3.6rem 4rem;
   }
 }
+
+  @media only screen and (min-width: 768px) {
+    .page {
+      max-width: 144rem;
+      padding: 2.9rem 16.5rem 0 16.5rem;
+    }
+
+    .page__nav {
+      margin-bottom: 17.8rem;
+    }
+
+    .page__nav__logo {
+      font-size: 3.6rem;
+    }
+
+    .page__nav__btn {
+      z-index: 1;
+      cursor: pointer;
+      font-size: 1.8rem;
+      padding: 1.4rem 3.1rem 1.4rem 3.2rem;
+    }
+
+    .page__main-content__hero {
+      width: 45.7rem;
+      margin-bottom: 25rem;
+    }
+
+    .page__main-content__header {
+      font-size: 5.6rem;
+      margin-bottom: 2.9rem;
+    }
+
+    .page__main-content__text {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      margin-bottom: 4rem;
+    }
+
+    .page__main-content__btn {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      padding: 1.9rem 3.1rem 1.6rem 3.2rem;
+    }
+
+    .page__main-content__img-mobile {
+      display: none;
+    }
+
+    .page__main-content__img-desktop {
+      display: block;
+      position: absolute;
+      translate: 55% -110%;
+    }
+
+    .page__main-content__courses {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 111rem;
+      margin-bottom: 26rem;
+    }
+
+    .page__main-content__courses__header {
+      padding: 5.6rem 2.1rem 13.9rem 3.2rem;
+      width: 35rem;
+      font-size: 3.2rem;
+      font-weight: 800;
+    }
+
+    .page__main-content__courses__box {
+      width: 35rem;
+      margin-bottom: 8rem;
+      padding: 6.4rem 3.2rem 4rem 3.2rem;
+    }
+
+    .page__footer {
+      padding: 3.2rem 16.5rem;
+      left: 0;
+    }
+
+    .page__footer__log {
+      font-size: 3.6rem;
+      font-weight: 800;
+    }
+
+    .page__footer__btn {
+      padding: 1.4rem 3.1rem 1.4rem 3.2rem;
+      font-size: 1.8rem;
+    }
+
+    /* || HOVER STATES */
+
+    .page__nav__btn:hover {
+      background: var(--666-ca-3, #666CA3);
+    }
+
+    .page__main-content__btn:hover {
+      background: var(--gradient-1-hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+    }
+
+    .page__footer__btn:hover {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);  
+    }
+  }
